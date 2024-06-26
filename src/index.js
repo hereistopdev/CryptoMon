@@ -13,8 +13,11 @@ root.render(
       onSuccess={(user) => console.log(`User ${user.id} logged in!`)}
       config={{
         appearance: {
-          landingHeader: "Your custom header text",
-          loginMessage: "Your custom header text",
+          landingHeader: "CryptoMon",
+          loginMessage: "Login | Sign Up",
+          theme: "light",
+
+          loginMethods: ["email", "wallet", "google", "apple", "farcaster"],
         },
       }}
     >

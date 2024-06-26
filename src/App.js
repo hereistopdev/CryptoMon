@@ -12,8 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* If the user is not authenticated, show a login button */}
-        {/* If the user is authenticated, show the user object and a logout button */}
+        <h1>CryptoMon Demo</h1>
         {ready && authenticated ? (
           <div>
             <textarea
@@ -22,12 +21,33 @@ function App() {
               style={{ width: "600px", height: "250px", borderRadius: "6px" }}
             />
             <br />
-            <button onClick={logout} style={{ marginTop: "20px", padding: "12px", backgroundColor: "#069478", color: "#FFF", border: "none", borderRadius: "6px" }}>
+            <button
+              onClick={logout}
+              style={{
+                marginTop: "20px",
+                padding: "12px",
+                backgroundColor: "#069478",
+                color: "#FFF",
+                border: "none",
+                borderRadius: "6px",
+              }}
+            >
               Log Out
             </button>
           </div>
         ) : (
-          <button onClick={login} style={{padding: "12px", backgroundColor: "#069478", color: "#FFF", border: "none", borderRadius: "6px" }}>Log In</button>
+          <button
+            onClick={login}
+            style={{
+              padding: "12px",
+              backgroundColor: "#069478",
+              color: "#FFF",
+              border: "none",
+              borderRadius: "6px",
+            }}
+          >
+            Log In
+          </button>
         )}
       </header>
     </div>
