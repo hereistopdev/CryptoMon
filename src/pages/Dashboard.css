@@ -1,13 +1,14 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    "ptp username username resource-bar resource-bar resource-bar resource-bar marketplace"
-    "battle breeding breeding resource-bar resource-bar resource-bar resource-bar marketplace"
-    "inventory inventory . limited-event huge-event . daily-rewards ."
-    ". community essence library . . . missions";
+    "ptp username . resource-bar resource-bar resource-bar resources marketplace"
+    "battle . . . . . limited-event huge-event"
+    "breeding . . . . . . daily-rewards"
+    ". . . . . . . ."
+    "inventory . . community essence library missions missions";
   grid-gap: 10px;
   padding: 10px;
-  width: 1000px;
+  width: 1200px;
   height: 600px;
   border: 2px solid black;
   background-color: white;
@@ -22,13 +23,48 @@
   font-weight: bold;
 }
 
-.ptp {
+.pfp {
   grid-area: ptp;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #e57373 !important;
+}
+
+.pfp .level-badge {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #bc5656;
+  border-radius: 100%;
+  bottom: -5px;
+  right: -5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .username {
   grid-area: username;
-  background-color: #e57373;
+  background-color: #e57373 !important;
+  height: 10px;
+  margin: 10px 0px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.xpbar {
+  background-color: #e57373 !important;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,26 +73,59 @@
 
 .resource-bar {
   grid-area: resource-bar;
+  height: 10px;
+  margin: 10px 20px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
   background-color: #888;
+  cursor: pointer;
 }
 
 .battle {
   grid-area: battle;
+
+  height: 45px;
+  width: 45px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .breeding {
   grid-area: breeding;
+  height: 45px;
+  width: 45px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .resources {
   grid-area: resources;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .marketplace {
   grid-area: marketplace;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .limited-event {
@@ -73,20 +142,53 @@
 
 .inventory {
   grid-area: inventory;
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .community {
   grid-area: community;
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .essence {
   grid-area: essence;
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .library {
   grid-area: library;
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .missions {
   grid-area: missions;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

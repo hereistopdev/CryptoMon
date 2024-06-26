@@ -4,10 +4,13 @@ import "./Dashboard.css";
 const Dashboard = () => {
   return (
     <div className="grid-container">
-      <div className="ptp">PTP</div>
+      <div className="pfp">
+        PFP
+        <div className="level-badge">1</div>
+      </div>
       <div className="username">
-        <div>UserName</div>
-        <div>XP bar</div>
+        UserName
+        <div className="xpbar">XP bar</div>
       </div>
       <div className="resource-bar">Resource Bar</div>
       <div className="button battle">Battle</div>
