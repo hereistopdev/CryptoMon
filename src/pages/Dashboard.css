@@ -1,0 +1,92 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "ptp username username resource-bar resource-bar resource-bar resource-bar marketplace"
+    "battle breeding breeding resource-bar resource-bar resource-bar resource-bar marketplace"
+    "inventory inventory . limited-event huge-event . daily-rewards ."
+    ". community essence library . . . missions";
+  grid-gap: 10px;
+  padding: 10px;
+  width: 1000px;
+  height: 600px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.grid-container > div {
+  background-color: #888;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ptp {
+  grid-area: ptp;
+}
+
+.username {
+  grid-area: username;
+  background-color: #e57373;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resource-bar {
+  grid-area: resource-bar;
+}
+
+.button {
+  background-color: #888;
+}
+
+.battle {
+  grid-area: battle;
+}
+
+.breeding {
+  grid-area: breeding;
+}
+
+.resources {
+  grid-area: resources;
+}
+
+.marketplace {
+  grid-area: marketplace;
+}
+
+.limited-event {
+  grid-area: limited-event;
+}
+
+.huge-event {
+  grid-area: huge-event;
+}
+
+.daily-rewards {
+  grid-area: daily-rewards;
+}
+
+.inventory {
+  grid-area: inventory;
+}
+
+.community {
+  grid-area: community;
+}
+
+.essence {
+  grid-area: essence;
+}
+
+.library {
+  grid-area: library;
+}
+
+.missions {
+  grid-area: missions;
+}

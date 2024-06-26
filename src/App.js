@@ -1,5 +1,6 @@
 import "./App.css";
 import { usePrivy } from "@privy-io/react-auth";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const { ready, authenticated, user, login, logout } = usePrivy();
@@ -15,6 +16,7 @@ function App() {
         <h1>CryptoMon Demo</h1>
         {ready && authenticated ? (
           <div>
+            <Dashboard />
             <textarea
               readOnly
               value={JSON.stringify(user, null, 2)}
